@@ -25,7 +25,7 @@ SECRET_KEY = 'e=p#@#t#uxhm3@2e#s(n+3$1f-qeus7wp$q%g=i5o*k6t$n00i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*',]
 
 
 # Application definition
@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'profile_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dbprofile',
+        'NAME': 'postgres',
         'USER':'postgres',
         'PASSWORD':'chichichi1',
         'HOST':'localhost',
@@ -133,7 +133,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 try:
-    from local_settings import *
+    from .local_settings import *
 except ImportError:
     pass
 

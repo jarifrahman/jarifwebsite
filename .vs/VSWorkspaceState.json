@@ -1,8 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\profile_project"
+    "\\blog",
+    "\\media",
+    "\\media\\images",
+    "\\profile_app",
+    "\\profile_project",
+    "\\profile_project\\static",
+    "\\templates",
+    "\\templates\\blog",
+    "\\templates\\profile_app"
   ],
-  "SelectedNode": "\\profile_project\\settings.py",
+  "SelectedNode": "\\static",
   "PreviewInSolutionExplorer": false
 }
