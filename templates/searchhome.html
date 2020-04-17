@@ -1,0 +1,25 @@
+﻿{% extends 'base.html' %}
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>search page</title>
+</head>
+<body>
+    {% block content %}
+    <br>
+    <br>
+    <h1>Search for source codes</h1>
+    enter keywords such as 'python', 'java', 'oracle sql', 'query', 'loops' or any specific key work you are looking for
+    <br>
+    <form action="{% url 'search_results' %}" method="get">
+        <input name="q" type="text" placeholder="Search...">
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    {% endblock %}
+</body>
+</html>

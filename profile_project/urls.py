@@ -22,7 +22,10 @@ import profile_app.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', profile_app.views.home,name='home'),
-    path('blog/',include('blog.urls'))
+    path('about', profile_app.views.about,name='about'),
+    path('codes/',include('blog.urls')),
+    path('coverletter', profile_app.views.coverletter,name='coverletter'),
+    
      
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
